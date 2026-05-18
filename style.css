@@ -1,0 +1,76 @@
+body {
+    background-image: url("./img/island.jpg");
+    background-size: cover;
+}
+h1 {
+    color: #f10707;
+    font-size: 74px;
+    margin: 190px 170px 20px 160px;
+    background: #7dce13;
+    padding: 30px;
+    border-radius: 50%;
+    width: 400px; 
+    transform:rotate(10deg)  
+}
+h1:hover {
+    color: #3403e7;
+}
+.cont {
+    position: relative;
+}
+p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 85%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+a {
+    text-decoration: none;
+    
+}
+.btn {
+    color: #370aec;
+    background: #e9ec05;
+    padding: 30px;
+    font-size: 20px;
+}
+.btn-cont {
+    display:flex;
+    gap: 25px;
+    justify-content: center;
+}
+h2 {
+    display:flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 30px;
+    background: #1aaa51;
+    font-size: 25px;
+    width: 25%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 15px 40px 25px rgba(230, 4, 196, 0.7);
+}
+.btn-cont0 {
+    left: 50%;
+    transform: translateX(-50%); 
+    position: absolute;   
+}
+.btn-cont0 ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    /* width: 25%; */
+    justify-content: center;    
+}
+.btn-cont0 a {
+    color: #02ff02;
+    font-size: 27px;
+}
+.btn-cont0 ol > li {
+    padding: 15px;
+    background: #e8f404;
+}
