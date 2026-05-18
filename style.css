@@ -1,6 +1,8 @@
 body {
     background-image: url("./img/island.jpg");
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 h1 {
     color: #f10707;
@@ -36,32 +38,31 @@ a {
     padding: 30px;
     font-size: 20px;
 }
+
+footer {
+    position: relative;
+}
 .btn-cont {
     display:flex;
     gap: 25px;
     justify-content: center;
 }
-h2 {
-    display:flex;
-    gap: 25px;
+.footer_cont {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+h2 {
     padding: 30px;
     background: #1aaa51;
     font-size: 25px;
-    width: 25%;
-    margin-left: 50%;
-    transform: translateX(-50%);
     box-shadow: 10px 15px 40px 25px rgba(230, 4, 196, 0.7);
-}
-.btn-cont0 {
-    left: 50%;
-    transform: translateX(-50%); 
-    position: absolute;   
 }
 .btn-cont0 ol {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /* width: 25%; */
     justify-content: center;    
