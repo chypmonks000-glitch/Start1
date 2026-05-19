@@ -4,6 +4,67 @@ body {
     padding:0;
     margin:0;
 }
+.logo {
+    justify-self: start;
+    align-self: center;
+    margin-left: 10px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.logo img {
+    border-radius: 50%;
+    height: 80px;
+    width: auto;
+    border: 3px solid #fff;
+}
+.movement {
+    animation: moveAndBack 2s ease-in-out 2 alternate;
+}
+@keyframes moveAndBack {
+    0% {
+        transform: translateX(0) rotate(0deg)
+    }
+    100% {
+        transform: translateX(calc(100cqw / 3)) rotate(360deg);
+    }
+    
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.menu_items {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    color: #ff0000;
+    padding: 5px 10px;
+}
+.menu_items::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #640000;
+    transition: width .4s linear;
+}
+.menu_items:hover::after {
+    width: 100%;
+}
+.menu_items:hover {
+    cursor: pointer;
+}
 h1 {
     color: #f10707;
     font-size: 74px;
@@ -18,15 +79,24 @@ h1:hover {
     color: #3403e7;
 }
 .cont {
-    position: relative;
+    display: flex;
+    justify-content: center; /* вирівнювання краще до контейнера ставити ставити, а не до контенту */
 }
 p {
     color: #fff;
     font-size: 30px;
     text-align: center;
-    width: 85%;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* width: 85%;  так краще теж не робити, краще зробити головну обгортку, де буде основний контент і їй задати розміри*/
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
+}
+.main_wrapper {
     margin-left: 50%;
     transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
 }
 a {
     text-decoration: none;
@@ -80,6 +150,9 @@ h2 {
 }
 header {
     background: #e9ec05;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
 }
 .footer {
     

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <title>Чайка Євгеній Связь Руле</title>
+    <title>Main</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
 </head>
 <body>
     <header>
-                <img src="./img/DD картінка.webp"  
-                    alt="Держіть Дверьку"  
-                    width="200px"
-                    height="200px" 
-                    />
+            <div class="logo">
+                <img src="./img/DD картінка.webp" alt="Держіть Дверьку" />
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="menu_items" data-page="home">Головна</li>
+                    <li class="menu_items" data-page="contacts">Контакти</li>
+                </ul>
+            </div>
     </header>
-    
-    <h1 attribute="value">Всім привіт</h1>
-    <div class="cont">
-        <p>Чайка Євгеній Связь Руле - це крутий хлопець. Він має багато талантів і завжди знаходить час для своїх близьких. Чайка Євгеній Связь Руле - це справжній друг, на якого 
-        можна покластися в будь-якій ситуації. Він завжди підтримує своїх друзів і допомагає їм досягти своїх цілей.</p>
+    <div class="main_wrapper">
+        <h1 class="title" attribute="value"></h1>
+        <div class="cont">
+            <p class="text"></p>
+        </div>
     </div>
-
     <div class="footer">
         <div class="btn-cont">
             <a class="btn" href="https://www.youtube.com/@DERGIDVER" target="__blank">Підписатися на канал Топового Растера</a>  
@@ -34,6 +40,8 @@
                 <li><a href="https://www.youtube.com/watch?v=ikDgJcQgYPY" target="__blank">Як пушить</a></li>     
             </ol>
         </div>
-    </div>             
+    </div>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/fetch.js"></script>      
 </body>
 </html>
